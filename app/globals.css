@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #f5f6f8;
+  color: #1c2330;
+}
+
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.subtitle {
+  margin: 4px 0 24px;
+  color: #5b6577;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+  padding: 8px 10px;
+  border: 1px solid #c9cfda;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.chips {
+  display: flex;
+  gap: 6px;
+}
+
+.chip {
+  padding: 6px 12px;
+  border: 1px solid #c9cfda;
+  border-radius: 999px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.chip.active {
+  background: #1c2330;
+  border-color: #1c2330;
+  color: #fff;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 20px 1fr auto auto;
+  gap: 16px;
+  align-items: center;
+  padding: 14px 16px;
+  background: #fff;
+  border: 1px solid #e1e5ec;
+  border-radius: 8px;
+}
+
+.card .name {
+  font-weight: 600;
+}
+
+.card .region {
+  color: #5b6577;
+  font-size: 13px;
+}
+
+.card .metric {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.card .metric span {
+  display: block;
+  color: #5b6577;
+  font-size: 12px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.operational {
+  background: #2e9e5b;
+}
+
+.dot.degraded {
+  background: #e0a100;
+}
+
+.dot.down {
+  background: #d43c3c;
+}
